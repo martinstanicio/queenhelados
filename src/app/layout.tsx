@@ -24,7 +24,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <body className={cn(bodyFont.variable, "antialiased")}>{children}</body>
+      <body className={cn(bodyFont.variable, "pattern antialiased")}>
+        {children}
+      </body>
     </html>
   );
 }

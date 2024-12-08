@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 
+import Footer from "@/components/footer";
 import { cn } from "@/lib/utils";
 
 import "./globals.css";
@@ -26,6 +27,7 @@ export default function RootLayout({
     <html lang="es">
       <body className={cn(bodyFont.variable, "pattern antialiased")}>
         {children}
+        <Footer />
       </body>
     </html>
   );

@@ -24,7 +24,9 @@ export default function BenefitCard({
           <FontAwesomeIcon icon={icon} className="text-xl text-primary" />
           <span>{title}</span>
         </CardTitle>
-        <CardDescription className="text-center">{description}</CardDescription>
+        <CardDescription className="text-balance text-center">
+          {description}
+        </CardDescription>
       </CardHeader>
     </Card>
   );

@@ -60,7 +60,7 @@ export default function Sucursales() {
                         target="_blank"
                       >
                         <FontAwesomeIcon icon={faWhatsapp} />
-                        <span className="sr-only">WhatsApp</span>
+                        <span className="sr-only">WhatsApp {name}</span>
                       </Link>
                     </Button>
                   </li>
@@ -73,7 +73,7 @@ export default function Sucursales() {
                       >
                         <Link href={instagram} target="_blank">
                           <FontAwesomeIcon icon={faInstagram} />
-                          <span className="sr-only">Instagram</span>
+                          <span className="sr-only">Instagram {name}</span>
                         </Link>
                       </Button>
                     </li>
@@ -87,7 +87,7 @@ export default function Sucursales() {
                       >
                         <Link href={facebook} target="_blank">
                           <FontAwesomeIcon icon={faFacebook} />
-                          <span className="sr-only">Facebook</span>
+                          <span className="sr-only">Facebook {name}</span>
                         </Link>
                       </Button>
                     </li>

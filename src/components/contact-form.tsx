@@ -85,10 +85,7 @@ export default function ContactForm() {
 
     const link = getWhatsAppLink(
       phone,
-      `Nombre: ${name}
-      Asunto: ${subject}
-      
-      ${message}`,
+      `Nombre: ${name}\nAsunto: ${subject}\n\n${message}`,
     );
     window.open(link, "_blank");
   }

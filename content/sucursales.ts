@@ -59,4 +59,13 @@ const sucursales: Sucursal[] = [
   },
 ] as const;
 
+export const names = [
+  "Belén de Escobar",
+  "Garín",
+  "Del Viso",
+  "Pilar",
+  "Maquinista Savio",
+  "Luján",
+] as const;
+
 export default sucursales;

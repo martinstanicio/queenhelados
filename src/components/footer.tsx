@@ -6,7 +6,7 @@ import SocialIcons from "./social-icons";
 export default function Footer() {
   return (
     <footer className="dark bg-background text-foreground">
-      <div className="mx-auto max-w-4xl space-y-12 p-8">
+      <div className="mx-auto max-w-4xl space-y-12 px-4 py-8">
         <div className="flex flex-col items-center justify-between gap-x-4 gap-y-12 sm:flex-row">
           <Brand />
           <SocialIcons />

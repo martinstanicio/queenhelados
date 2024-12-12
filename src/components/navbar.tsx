@@ -8,6 +8,7 @@ import Link from "next/link";
 import { cn } from "@/lib/utils";
 
 import Brand from "./brand";
+import SocialIcons from "./social-icons";
 import { Button } from "./ui/button";
 import {
   NavigationMenu,
@@ -21,6 +22,7 @@ import {
   SheetClose,
   SheetContent,
   SheetDescription,
+  SheetFooter,
   SheetHeader,
   SheetTitle,
   SheetTrigger,
@@ -73,6 +75,10 @@ export default function Navbar() {
               ))}
             </NavigationMenuList>
           </NavigationMenu>
+
+          <SheetFooter>
+            <SocialIcons />
+          </SheetFooter>
         </SheetContent>
       </Sheet>
 

@@ -6,6 +6,8 @@ import {
 
 import { getWhatsAppLink } from "@/lib/whatsapp";
 
+import { callCenter } from "./contacts";
+
 export const nav = [
   { label: "Inicio", href: "#hero" },
   { label: "Sucursales", href: "#sucursales" },
@@ -15,7 +17,7 @@ export const nav = [
 export const social = [
   {
     label: "WhatsApp",
-    href: getWhatsAppLink(5491158106098).toString(),
+    href: getWhatsAppLink(callCenter).toString(),
     icon: faWhatsapp,
   },
   {

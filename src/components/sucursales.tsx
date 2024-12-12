@@ -4,11 +4,12 @@ import {
   faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import sucursales from "~/sucursales";
 
 import Link from "next/link";
 
 import { formatPhoneNumber, getWhatsAppLink } from "@/lib/whatsapp";
+
+import sucursales from "~/sucursales";
 
 import {
   Accordion,

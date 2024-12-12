@@ -28,7 +28,6 @@ import {
 
 const links = [
   { label: "Inicio", path: "#hero" },
-  { label: "Sobre Nosotros", path: "#sobre-nosotros" },
   { label: "Sucursales", path: "#sucursales" },
   { label: "Contacto", path: "#contacto" },
 ];

@@ -40,6 +40,7 @@ export default function Sucursales() {
             <AccordionContent className="grid-cols-3 gap-4 p-4 max-md:space-y-4 md:grid">
               <iframe
                 src={map}
+                title={`Mapa con la ubicación de nuestra sucursal en ${name}.`}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"

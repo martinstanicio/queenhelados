@@ -103,7 +103,11 @@ export default function ContactForm() {
             <FormItem>
               <FormLabel>Nombre</FormLabel>
               <FormControl>
-                <Input placeholder="Juan Pérez" {...field} />
+                <Input
+                  placeholder="Juan Pérez"
+                  autoComplete="name"
+                  {...field}
+                />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -117,6 +121,7 @@ export default function ContactForm() {
             <FormItem>
               <FormLabel>Asunto</FormLabel>
               <Select
+                name="subject"
                 onValueChange={(value) => {
                   field.onChange(value);
                   setSubject(value);
@@ -149,6 +154,7 @@ export default function ContactForm() {
               <FormItem>
                 <FormLabel>Sucursal</FormLabel>
                 <Select
+                  name="sucursal"
                   onValueChange={field.onChange}
                   defaultValue={field.value}
                 >

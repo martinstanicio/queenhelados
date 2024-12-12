@@ -1,16 +1,14 @@
 "use client";
 
-import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import Link from "next/link";
 
 import { cn } from "@/lib/utils";
 
-import { nav as navLinks } from "~/links";
+import { nav as navLinks, social as socialLinks } from "~/links";
 
 import Brand from "./brand";
-import SocialIcons from "./social-icons";
 import { Button } from "./ui/button";
 import {
   NavigationMenu,
@@ -19,64 +17,28 @@ import {
   NavigationMenuList,
   navigationMenuTriggerStyle,
 } from "./ui/navigation-menu";
-import {
-  Sheet,
-  SheetClose,
-  SheetContent,
-  SheetDescription,
-  SheetFooter,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-} from "./ui/sheet";
 
 export default function Navbar() {
   return (
     <div className="flex items-center justify-between gap-8 px-8 py-4">
       <Brand />
 
-      <Sheet>
-        <SheetTrigger asChild>
+      <nav className="flex items-center gap-2 md:hidden">
+        {socialLinks.map(({ label, href, icon }, i) => (
           <Button
+            asChild
             variant="outline"
             size="icon"
-            className="border-white/10 bg-transparent text-white backdrop-blur-sm transition-colors md:hidden"
+            key={i}
+            className="border-white/10 bg-transparent text-white backdrop-blur-sm transition-colors"
           >
-            <FontAwesomeIcon icon={faBars} />
-            <span className="sr-only">Menú</span>
+            <Link href={href} target="_blank">
+              <FontAwesomeIcon icon={icon} />
+              <span className="sr-only">{label}</span>
+            </Link>
           </Button>
-        </SheetTrigger>
-        <SheetContent className="flex flex-col items-center justify-between gap-8">
-          <SheetHeader>
-            <Brand />
-            <div className="hidden">
-              <SheetTitle />
-              <SheetDescription />
-            </div>
-          </SheetHeader>
-
-          <NavigationMenu className="flex-initial">
-            <NavigationMenuList className="flex-col space-x-0 space-y-3">
-              {navLinks.map(({ label, href }, i) => (
-                <NavigationMenuItem key={i}>
-                  <SheetClose asChild>
-                    <Link
-                      href={href}
-                      className={cn(navigationMenuTriggerStyle(), "text-lg")}
-                    >
-                      {label}
-                    </Link>
-                  </SheetClose>
-                </NavigationMenuItem>
-              ))}
-            </NavigationMenuList>
-          </NavigationMenu>
-
-          <SheetFooter>
-            <SocialIcons />
-          </SheetFooter>
-        </SheetContent>
-      </Sheet>
+        ))}
+      </nav>
 
       <NavigationMenu className="hidden md:block">
         <NavigationMenuList>

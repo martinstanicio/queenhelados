@@ -7,6 +7,8 @@ import Link from "next/link";
 
 import { cn } from "@/lib/utils";
 
+import { nav as navLinks } from "~/links";
+
 import Brand from "./brand";
 import SocialIcons from "./social-icons";
 import { Button } from "./ui/button";
@@ -27,12 +29,6 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "./ui/sheet";
-
-const links = [
-  { label: "Inicio", path: "#hero" },
-  { label: "Sucursales", path: "#sucursales" },
-  { label: "Contacto", path: "#contacto" },
-];
 
 export default function Navbar() {
   return (
@@ -61,11 +57,11 @@ export default function Navbar() {
 
           <NavigationMenu className="flex-initial">
             <NavigationMenuList className="flex-col space-x-0 space-y-3">
-              {links.map(({ label, path }, i) => (
+              {navLinks.map(({ label, href }, i) => (
                 <NavigationMenuItem key={i}>
                   <SheetClose asChild>
                     <Link
-                      href={path}
+                      href={href}
                       className={cn(navigationMenuTriggerStyle(), "text-lg")}
                     >
                       {label}
@@ -84,9 +80,9 @@ export default function Navbar() {
 
       <NavigationMenu className="hidden md:block">
         <NavigationMenuList>
-          {links.map(({ label, path }, i) => (
+          {navLinks.map(({ label, href }, i) => (
             <NavigationMenuItem key={i}>
-              <Link href={path} legacyBehavior passHref>
+              <Link href={href} legacyBehavior passHref>
                 <NavigationMenuLink
                   className={cn(
                     navigationMenuTriggerStyle(),

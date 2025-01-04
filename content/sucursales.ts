@@ -3,8 +3,8 @@ type Sucursal = {
   address: string;
   phone: number;
   map: string;
-  facebook?: string;
-  instagram?: string;
+  facebook: string;
+  instagram: string;
 };
 
 const sucursales: Sucursal[] = [

@@ -72,7 +72,7 @@ export default function Hero() {
                     sizes="auto"
                     className="mb-4 aspect-video h-full w-full rounded bg-secondary object-cover object-center"
                     placeholder="blur"
-                    priority={true}
+                    priority
                   />
                   <CardTitle>{promo.title}</CardTitle>
                   <p>{promo.content}</p>

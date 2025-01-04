@@ -3,6 +3,7 @@ import Link from "next/link";
 
 import hero from "@/assets/hero.jpg";
 import promoImg from "@/assets/promo.jpg";
+import { description, siteName, title } from "@/lib/metadata";
 import { cn } from "@/lib/utils";
 
 import promo from "~/promo";
@@ -36,16 +37,16 @@ export default function Hero() {
           >
             <div
               className={cn(
-                "flex flex-col gap-4 text-white max-md:items-center max-md:text-center",
+                "flex flex-col gap-4 text-white max-md:items-center max-md:text-center md:gap-8",
                 !promo.active && "items-center text-center",
               )}
             >
-              <h1 className="text-balance text-4xl font-bold drop-shadow-md sm:text-5xl md:text-6xl">
-                Queen Helados
+              <h1 className="text-balance text-3xl font-bold drop-shadow-md sm:text-4xl md:text-5xl">
+                <span className="italic">{title}</span>
+                <br />— {siteName} —
               </h1>
-              <p className="max-w-[35ch] text-balance text-lg drop-shadow-md sm:text-xl">
-                Más de 25 años fabricando helados con los más altos estándares
-                de calidad.
+              <p className="max-w-[50ch] text-balance drop-shadow-md sm:text-lg md:text-xl">
+                {description}
               </p>
               <div className="mt-4 flex gap-4 max-sm:w-full max-sm:flex-col">
                 <Button size="lg" className="max-sm:w-full" asChild>

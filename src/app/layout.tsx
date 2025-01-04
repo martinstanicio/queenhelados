@@ -1,6 +1,5 @@
 import { Analytics } from "@vercel/analytics/react";
 
-import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 
 import Footer from "@/components/footer";
@@ -14,11 +13,7 @@ const bodyFont = Poppins({
   variable: "--font-body",
 });
 
-export const metadata: Metadata = {
-  title: "Queen Helados",
-  description:
-    "Más de 25 años fabricando helados con los más altos estándares de calidad.",
-};
+export { metadata } from "@/lib/metadata";
 
 export default function RootLayout({
   children,

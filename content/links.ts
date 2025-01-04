@@ -20,7 +20,10 @@ export const nav = [
 export const social = [
   {
     label: "WhatsApp",
-    href: getWhatsAppLink(callCenter).toString(),
+    href: getWhatsAppLink(
+      callCenter,
+      "Hola, ¿qué tal? Quería más información.",
+    ).toString(),
     icon: faWhatsapp,
   },
   {

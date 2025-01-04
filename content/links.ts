@@ -7,6 +7,9 @@ import {
 import { getWhatsAppLink } from "@/lib/whatsapp";
 
 import { callCenter } from "./contacts";
+import sucursales from "./sucursales";
+
+const mainSucursal = sucursales[0];
 
 export const nav = [
   { label: "Inicio", href: "#hero" },
@@ -22,12 +25,12 @@ export const social = [
   },
   {
     label: "Instagram",
-    href: "https://www.instagram.com/queenhelados.oficial/",
+    href: mainSucursal.instagram,
     icon: faInstagram,
   },
   {
     label: "Facebook",
-    href: "https://www.facebook.com/Queenhelados.oficial/",
+    href: mainSucursal.facebook,
     icon: faFacebook,
   },
 ];

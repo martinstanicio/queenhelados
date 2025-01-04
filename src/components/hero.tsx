@@ -25,7 +25,7 @@ export default function Hero() {
       <Navbar />
 
       <div className="py-16">
-        <div className="border-y border-white/10 backdrop-blur-sm backdrop-brightness-75">
+        <div className="border-y border-white/10 backdrop-blur-sm backdrop-brightness-50">
           <div
             className={cn(
               "mx-auto max-w-6xl px-4 sm:px-8",

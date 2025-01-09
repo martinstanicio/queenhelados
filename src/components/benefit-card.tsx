@@ -21,7 +21,7 @@ export default function BenefitCard({
     <Card {...props}>
       <CardHeader className="space-y-4">
         <CardTitle className="flex flex-col items-center gap-4 text-center">
-          <FontAwesomeIcon icon={icon} className="text-xl text-primary" />
+          <FontAwesomeIcon icon={icon} className="size-5 text-primary" />
           <span>{title}</span>
         </CardTitle>
         <CardDescription className="text-balance text-center">

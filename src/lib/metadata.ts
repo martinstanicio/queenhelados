@@ -38,4 +38,7 @@ export const metadata: Metadata = {
     locale: "es",
     url: "/",
   },
+  alternates: {
+    canonical: "https://www.heladosqueen.com",
+  },
 };

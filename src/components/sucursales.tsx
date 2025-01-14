@@ -47,7 +47,7 @@ export default function Sucursales() {
                 className="col-span-2 aspect-[4/3] w-full rounded border-0 bg-secondary"
               ></iframe>
               <div>
-                <h4 className="mb-2 text-xl font-bold">{name}</h4>
+                <p className="mb-2 text-xl font-bold">{name}</p>
                 <p>{address}</p>
                 <ul className="my-4 flex list-none gap-2">
                   <li>

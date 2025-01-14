@@ -22,6 +22,7 @@ export default function Hero() {
         placeholder="blur"
         sizes="auto"
         className="absolute -z-10 h-full w-full object-cover object-center filter"
+        role="presentation"
       />
       <Navbar />
 

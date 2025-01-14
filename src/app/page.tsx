@@ -42,12 +42,25 @@ export default function Home() {
         id="sucursales"
         className="mx-auto max-w-4xl space-y-8 px-4 py-12"
       >
-        <h2 className="text-center text-4xl font-bold">Sucursales</h2>
+        <div className="space-y-4 text-center">
+          <h2 className="text-4xl font-bold">Sucursales</h2>
+          <p className="text-balance sm:text-lg">
+            Encontrá <strong>tu sucursal más cercana</strong> y disfrutá de un
+            refrescante helado. ¡Te esperamos!
+          </p>
+        </div>
         <Sucursales />
       </section>
       <Separator />
       <section id="contacto" className="mx-auto max-w-4xl space-y-8 px-4 py-12">
-        <h2 className="text-center text-4xl font-bold">Contacto</h2>
+        <div className="space-y-4 text-center">
+          <h2 className="text-4xl font-bold">Contacto</h2>
+          <p className="text-balance sm:text-lg">
+            No dudes en contactarnos hoy mismo para resolver cualquier{" "}
+            <strong>duda</strong> o <strong>inconveniente</strong> que tengas,
+            ¡estamos encantados de ayudarte!
+          </p>
+        </div>
         <ContactForm />
       </section>
     </main>

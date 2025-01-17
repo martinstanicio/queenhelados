@@ -17,7 +17,7 @@ export default function Hero() {
     <section className="relative" id="hero">
       <Image
         src={hero}
-        alt=""
+        alt="Helado crocante en un bowl con frutillas y chocolate"
         priority
         placeholder="blur"
         sizes="auto"

@@ -36,7 +36,7 @@ const sucursales: Sucursal[] = [
   {
     name: "Pilar",
     address: "Ituzaingó 580, Pilar",
-    phone: 5491136751147,
+    phone: 5491138580618,
     map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3289.775640111811!2d-58.91432462430113!3d-34.457842749808876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc9d3c1ff1fbed%3A0x82c6dac9c007ae6f!2sHELADOS%20QUEEN%20PILAR!5e0!3m2!1ses-419!2sar!4v1733693837702!5m2!1ses-419!2sar",
     facebook: "https://www.facebook.com/Heladosqueenpilar/",
     instagram: "https://www.instagram.com/heladosqueen.pilar/",
@@ -44,7 +44,7 @@ const sucursales: Sucursal[] = [
   {
     name: "Maquinista Savio",
     address: "Av. Constitución 155, Maquinista Savio",
-    phone: 5491141890623,
+    phone: 5491128264942,
     map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3291.710701801235!2d-58.774494224303446!3d-34.408698447225014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc9f0a75b0ecc7%3A0x90c68ee3b42b43e7!2sHELADOS%20QUEEN%20SAVIO!5e0!3m2!1ses-419!2sar!4v1733693914232!5m2!1ses-419!2sar",
     facebook: "https://www.facebook.com/HeladosQueenSavio/",
     instagram: "https://www.instagram.com/queenhelados.savio/",

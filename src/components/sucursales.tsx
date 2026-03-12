@@ -1,6 +1,7 @@
 import {
   faFacebook,
   faInstagram,
+  faTiktok,
   faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -28,7 +29,7 @@ export default function Sucursales() {
       className="w-full space-y-8"
     >
       {sucursales.map(
-        ({ name, address, phone, map, facebook, instagram }, i) => (
+        ({ name, address, phone, map, facebook, instagram, tiktok }, i) => (
           <AccordionItem
             value={name}
             key={i}
@@ -89,6 +90,20 @@ export default function Sucursales() {
                         <Link href={facebook} target="_blank">
                           <FontAwesomeIcon icon={faFacebook} />
                           <span className="sr-only">Facebook {name}</span>
+                        </Link>
+                      </Button>
+                    </li>
+                  )}
+                  {tiktok && (
+                    <li>
+                      <Button
+                        asChild
+                        size="icon"
+                        className="bg-black transition-all hover:bg-gray-800 focus:bg-gray-800"
+                      >
+                        <Link href={tiktok} target="_blank">
+                          <FontAwesomeIcon icon={faTiktok} />
+                          <span className="sr-only">TikTok {name}</span>
                         </Link>
                       </Button>
                     </li>

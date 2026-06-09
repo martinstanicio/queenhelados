@@ -33,7 +33,7 @@ const sucursales: Sucursal[] = [
     phone: 5491123358189,
     map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3289.970596200532!2d-58.80132151692419!3d-34.45289427993671!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccbca6f791087%3A0xe148158c8f8cbffe!2sHELADOS%20QUEEN%20DEL%20VISO!5e0!3m2!1ses-419!2sar!4v1733693669252!5m2!1ses-419!2sar",
     facebook:
-      "https://www.facebook.com/p/Helados-Queen-del-viso-100083150958027/",
+      "https://www.facebook.com/queenheladosdelviso/",
     instagram: "https://www.instagram.com/heladosqueendelviso/",
     tiktok: "https://www.tiktok.com/@queenheladosdelviso",
   },

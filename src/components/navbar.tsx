@@ -48,7 +48,7 @@ export default function Navbar() {
                 <NavigationMenuLink
                   className={cn(
                     navigationMenuTriggerStyle(),
-                    "border border-white/10 bg-transparent text-white backdrop-blur-sm transition-colors",
+                    "border border-white/10 bg-transparent text-foreground backdrop-blur-sm transition-colors",
                   )}
                 >
                   {label}

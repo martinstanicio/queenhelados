@@ -18,7 +18,7 @@ export default function Footer() {
             <Link
               href="https://www.linkedin.com/in/martinstanicio/"
               target="_blank"
-              className="font-bold text-primary hover:underline focus:underline"
+              className="font-bold hover:underline focus:underline"
             >
               Martín Stanicio
             </Link>

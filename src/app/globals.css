@@ -4,16 +4,16 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 0 0% 3.9%;
+    --background: 34 22% 90%;
+    --foreground: 0 0% 10%;
     --card: 0 0% 100%;
     --card-foreground: 0 0% 3.9%;
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 3.9%;
-    --primary: 0 72.2% 49.5%;
-    --primary-foreground: 0 85.7% 97.3%;
-    --secondary: 0 0% 96.1%;
-    --secondary-foreground: 0 0% 9%;
+    --primary: 202 73% 17%;
+    --primary-foreground: 34 22% 90%;
+    --secondary: 39 31% 50%;
+    --secondary-foreground: 0 0% 10%;
     --muted: 0 0% 96.1%;
     --muted-foreground: 0 0% 45.1%;
     --accent: 0 0% 96.1%;
@@ -22,7 +22,7 @@
     --destructive-foreground: 0 0% 98%;
     --border: 0 0% 89.8%;
     --input: 0 0% 89.8%;
-    --ring: 0 72.2% 49.5%;
+    --ring: 202 73% 17%;
     --radius: 0.5rem;
     --chart-1: 12 76% 61%;
     --chart-2: 173 58% 39%;
@@ -32,16 +32,16 @@
   }
 
   .dark {
-    --background: 0 0% 3.9%;
-    --foreground: 0 0% 98%;
+    --background: 0 0% 10%;
+    --foreground: 34 22% 90%;
     --card: 0 0% 3.9%;
     --card-foreground: 0 0% 98%;
     --popover: 0 0% 3.9%;
     --popover-foreground: 0 0% 98%;
-    --primary: 0 72.2% 55%;
-    --primary-foreground: 0 85.7% 97.3%;
-    --secondary: 0 0% 14.9%;
-    --secondary-foreground: 0 0% 98%;
+    --primary: 202 73% 17%;
+    --primary-foreground: 34 22% 90%;
+    --secondary: 39 31% 50%;
+    --secondary-foreground: 34 22% 90%;
     --muted: 0 0% 14.9%;
     --muted-foreground: 0 0% 63.9%;
     --accent: 0 0% 14.9%;
@@ -50,7 +50,7 @@
     --destructive-foreground: 0 0% 98%;
     --border: 0 0% 14.9%;
     --input: 0 0% 14.9%;
-    --ring: 0 72.2% 55%;
+    --ring: 202 73% 17%;
     --chart-1: 220 70% 50%;
     --chart-2: 160 60% 45%;
     --chart-3: 30 80% 55%;
@@ -74,7 +74,7 @@
 
   .pattern {
     --s: 34px;
-    --c1: hsla(0, 100%, 99%);
+    --c1: color-mix(in srgb, hsl(var(--primary)), #ffffff 99%);
     --c2: #ffffff;
 
     --_g: radial-gradient(calc(var(--s) / 2), var(--c1) 97%, #0000);
